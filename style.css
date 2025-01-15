@@ -1,0 +1,125 @@
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: #cf1818; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    position: relative;
+    border-bottom: 3px solid #dadada;
+
+}
+.nav h2{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+.nav-part2 h3{
+    font-size: 1.2vw;
+}
+.nav-part2 h3:hover{
+    background-color: #070606;
+    color: white;
+}
+.nav-part2 i{
+    display: none;
+}
+.nav-part2 button{
+    padding: 0.6vw 1.5vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.book{
+    height: calc(100% - 100px);
+    width: 100%;
+   display: flex;
+   position: relative;
+   padding: 3vw 3vw;
+    
+}
+.left{
+    height: 100%;
+    width: 55%;
+    
+}
+.left h2{
+    font-size: 5vw;
+    line-height: 5vw;
+}
+.left h2 span{
+    color: rgb(26, 194, 206);
+    
+}
+.left p{
+    padding: 2vw 0vw ;
+    font-size: 1.2vw;
+}
+.left button{
+    padding: 0.6vw 1.2vw;
+    font-size: 1.5vw;
+    background-color: rgb(26, 194, 206);
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+}
+.left button:hover{
+    font-size: 1vw;
+}
+.right{
+   height: 100%;
+    width:45% ;
+    
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+@media (max-width:600px) {
+    .nav{
+        background-color: lightseagreen;
+        color: white;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5vw;
+    }
+    .nav-part2 h3{
+        display: none;
+    }
+    .nav-part2 i{
+        display: block;
+        font-size: 6vw;
+    }
+    .nav-part2 button{
+        display: none;
+    }
+
+
+}
